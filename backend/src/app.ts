@@ -19,6 +19,8 @@ app.use(
 
 app.use(express.json());
 
+app.options("*", cors());
+
 // Auth route first
 app.use("/admin", authRoutes);
 
