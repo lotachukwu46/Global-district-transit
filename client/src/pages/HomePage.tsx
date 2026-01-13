@@ -103,7 +103,7 @@ const HomePage: React.FC = () => {
           </p>
 
           <h1 className="text-4xl md:text-7xl font-black leading-tight mb-6">
-            Track Your Shipment <br />
+            krack Your Shipment <br />
             <span className="text-blue-500">In Real Time</span>
           </h1>
 
