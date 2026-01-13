@@ -1,0 +1,19 @@
+{
+  "name": "parcel-tracker-monorepo",
+  "private": true,
+  "workspaces": [
+    "client",
+    "backend"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev -w client",
+    "dev:backend": "npm run dev -w backend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:client\"",
+    "build:client": "npm run build -w client",
+    "build:backend": "npm run build -w backend",
+    "install:all": "npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
